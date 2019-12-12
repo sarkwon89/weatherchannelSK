@@ -1,0 +1,56 @@
+.container{
+
+
+}
+
+
+h1{
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    border: solid red;
+}
+
+#searchInput{
+    width: 80%;
+}
+
+
+.search{
+    border:solid yellow;
+}
+
+.searchPrevious{
+    border:solid green;
+}
+
+.info{
+    border:solid blue;
+    height:40%;
+}
+
+
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.forecastbox{
+
+    border: solid pink;
+    display: flex;
+
+}
+
+#rowcontainer{
+    height: 80vh;
+}
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Channel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Weather Dashboard</h1>
+    <div class="container-fluid">
+        <div class="row" id="rowcontainer">
+            <div class="col search">
+                <div class="row">
+                    <input type="text" name="" id="searchInput">
+                    <button>Search</button>
+                </div>
+                <div class="row">
+                    <div class="col previousSearch">
+                        <button>Previous Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 info">
+                <div class="row">
+                    <h2 id="cityValue">City</h2>
+                    <h2><span id="dateValue"></span></h2>
+                    <img id="day1icon"></img>
+                </div>
+                <div class="row">
+                    <p>Temperature:
+                        <span id="tempValue">
+                        </span>
+                        <br>
+                        Wind Speed: <span id="windValue">
+                        </span> <br>
+                        UV Index: <span id="uvValue">
+                        </span></p>
+                </div>
+                <h2>5-Day Forecast:</h2>
+                <div class="row forecast">
+
+                    <div id="day2" class="forecastbox">
+                        <div id="date2"></div>
+                        <br>
+                        <div id="icon"></div>
+                        <br>
+                        <p>
+                            <span id="tempValue">Temperature</span>
+                            <br>
+                            <span id="humidityValue">Humidity </span>
+                            <br>
+                        </p>
+                    </div>
+                    <div id="day2" class="forecastbox">
+                        <div id="date2"></div>
+                        <br>
+                        <div id="icon"></div>
+                        <br>
+                        <p>
+                            <span id="tempValue">Temperature</span>
+                            <br>
+                            <span id="humidityValue">Humidity </span>
+                            <br>
+                        </p>
+                    </div>
+                    <div id="day2" class="forecastbox">
+                        <div id="date2"></div>
+                        <br>
+                        <div id="icon"></div>
+                        <br>
+                        <p>
+                            <span id="tempValue">Temperature</span>
+                            <br>
+                            <span id="humidityValue">Humidity </span>
+                            <br>
+                        </p>
+                    </div>
+                    <div id="day2" class="forecastbox">
+                        <div id="date2"></div>
+                        <br>
+                        <div id="icon"></div>
+                        <br>
+                        <p>
+                            <span id="tempValue">Temperature</span>
+                            <br>
+                            <span id="humidityValue">Humidity </span>
+                            <br>
+                        </p>
+                    </div>
+                    <div id="day2" class="forecastbox">
+                        <div id="date2"></div>
+                        <br>
+                        <div id="icon"></div>
+                        <br>
+                        <p>
+                            <span id="tempValue">Temperature</span>
+                            <br>
+                            <span id="humidityValue">Humidity </span>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+</body>
+
+</html>
