@@ -1,67 +1,81 @@
-.container{
-
+body{
+    background-image: url("assets/StockSnap_3U8O4MM18T.jpg")
 
 }
 
+.container{
+    
+}
 
 h1{
     height:10vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 65px;
 }
 
+h2{
+    margin: 2%;
+    font-size: 40px;
+}
+
+
+#cityValue{
+    margin-right:0%;
+    padding-right: 0%;
+}
+
+
 .row{
-    border: solid red;
+    /* border: solid red; */
 }
 
 #searchInput{
     width: 80%;
+    margin-left: 2%;
 }
 
+.inputrow{
+    margin-bottom: 8%;
+    margin-top: 8%;
+}
+
+.currentinforow{
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: 2%;
+
+}
 
 .search{
-    border:solid yellow;
+    border:solid rgb(41, 41, 41);
+    padding-bottom: 15px; 
 }
 
-.searchPrevious{
-    border:solid green;
-}
+
 
 .info{
-    border:solid blue;
-    height:40%;
+    border:solid rgb(41, 41, 41);
+    height:80vh;
 }
-
-.D{
-width: 100%;
-}
-
-
-.I{
-    width: 100%;
-}
-
-.T{
-    width: 100%;
-}
-
-.H{
-    width: 100%;
-}
-
 
 
 .forecast {
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    /* align-content: center; */
+    
 }
 
 .forecastbox{
-
-    border: solid pink;
-    display: flex;
+    padding: 40px;
+    background-color: rgba(46, 45, 45, 0.575);
+    border:solid black;
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke
 
 }
 
@@ -69,5 +83,162 @@ width: 100%;
     height: 80vh;
 }
 
+@media only screen and (max-width: 1800px) {
 
+    h2{
+        margin: 2%;
+        font-size: 30px;
+    }
 
+    .forecastbox{
+        padding: 30px;
+        background-color: rgba(46, 45, 45, 0.575);
+        border:solid black;
+        font-size: 20px;
+        font-weight: bold;
+        color: whitesmoke
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 1500px) {
+
+    h2{
+        margin: 2%;
+        font-size: 20px;
+    }
+
+    .forecastbox{
+        padding: 20px;
+        background-color: rgba(46, 45, 45, 0.575);
+        border:solid black;
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke
+    
+    }
+
+    .currentinforow{
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-left: 2%;
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 1120px) {
+
+    h2{
+        margin: 2%;
+        font-size: 20px;
+    }
+
+    .forecastbox{
+        padding: 15px;
+        background-color: rgba(46, 45, 45, 0.575);
+        border:solid black;
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke
+    
+    }
+
+    .currentinforow{
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-left: 2%;
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    h1{
+        height:10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 10px;
+    }
+
+    .forecastbox{
+        padding: 10px;
+        background-color: rgba(46, 45, 45, 0.575);
+        border:solid black;
+        font-size: 10px;
+        font-weight: bold;
+        color: whitesmoke
+    
+    }
+
+    .currentinforow{
+        font-size: 10px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-left: 2%;
+    
+    }
+
+    .search{
+        border:solid rgb(41, 41, 41);
+        padding-bottom: 15px; 
+        background-color:rgba(46, 45, 45, 0.575); 
+    }
+
+  }
+
+  
+  @media only screen and (max-width: 450px) {
+
+    h1{
+        height:10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .forecastbox{
+        padding: 60px;
+        background-color: rgba(46, 45, 45, 0.575);
+        border:solid black;
+        font-size: 20px;
+        color: whitesmoke
+    
+    }
+
+    .currentinforow{
+        font-size: 20px;
+        color: whitesmoke;
+        margin-left: 2%;
+    
+    }
+
+    .info{
+        border: none;
+    }
+
+    #searchInput{
+        width: 70%;
+        margin-left: 2%;
+    }
+    .search{
+        border:solid rgb(41, 41, 41);
+        padding-bottom: 15px; 
+        background-color:rgba(46, 45, 45, 0.575); 
+    }
+
+  }

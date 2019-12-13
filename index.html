@@ -15,8 +15,8 @@
     <h1>Weather Dashboard</h1>
     <div class="container-fluid">
         <div class="row" id="rowcontainer">
-            <div class="col search">
-                <div class="row">
+            <div class="col-md-3 search">
+                <div class="row inputrow">
                     <input type="text" name="" id="searchInput">
                     <button>Search</button>
                 </div>
@@ -26,13 +26,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 info">
+            <div class="col-md-9 info">
                 <div class="row">
                     <h2 id="cityValue">City</h2>
-                    <h2><span id="dateValue"></span></h2>
-                    <img id="day1icon"></img>
+                    <h2 id="currentDate">
+                        <span id="dateValue"></span>
+                        <img id="day1icon"></img>
+                    </h2>
                 </div>
-                <div class="row">
+                <div class="row currentinforow">
                     <p>Temperature:
                         <span id="tempValue">
                         </span>
@@ -59,7 +61,7 @@
                         <br>
                         <img id="icon3"></img>
                         <br>
-                        <span id="tempValue3"></span></p>
+                        <p>Temperature: <span id="tempValue3"></span></p>
                         <br>
                         <p>Humidity: <span id="humidityValue3"> </span></p>
                         <br>

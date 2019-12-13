@@ -171,22 +171,7 @@ $("button").on("click", function (event) {
             $("#tempValue6").text(day6TempF.toFixed(0));
             var humidity6 = (response.list[32].main.humidity);
             console.log(humidity6);
-            $("#humidityValue5").text(humidity6);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            $("#humidityValue6").text(humidity6);
 
             console.log(response)
         });
@@ -195,17 +180,14 @@ $("button").on("click", function (event) {
 });
 
 
+//store a city input value in a key
+
+//pull the key value and run the click event
+
+//grab the api date and use moment js to convert
+
+//function
 
 
 
 
-// //pull API data for the next 5 days  
-// $.ajax({
-//     url: queryURL,
-//     method: "GET"
-// }).then(function (response) {
-
-
-//     console.log(response)
-
-// });
