@@ -7,10 +7,18 @@ var currentTime = moment().format("MMM Do YY");
 var divCurrentTime = $("<div>");
 $("#dateValue").append(divCurrentTime).text("|" + currentTime);
 
+var SearchInputArray = [];
 
 $("button").on("click", function (event) {
     event.preventDefault();
+    //grab input data
     searchInput = $("#searchInput").val();
+
+    //store searchInput value and push to array
+    SearchInputArray.push(searchInput)
+    localStorage.setItem(SearchInputArray, searchInput)
+    
+
     // console.log(searchInput);
     var apiKey = "469eff1dd9ce916ee85217295447e872";
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&appid=" + apiKey;
