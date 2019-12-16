@@ -1,30 +1,19 @@
+$(document).ready(function () {
+
 var searchInput;
 var currentTime = moment().format("MMM Do YY");
 
-//Keep track of all the search input values
+//Keep track of all the search input object data into this array
 var SearchInputArr = [];
+
+//pull value stored in API1 key and create a variable for it
+var currentWeatherData = JSON.parse(localStorage.getItem("API1")) || {};
+console.log(currentWeatherData)
 
 
 //Display current date info next to city element
 var divCurrentTime = $("<div>");
 $("#dateValue").append(divCurrentTime).text("|" + currentTime);
-
-
-//Store search input into local storage
-function storeSearchInput() {
-    //store searchInput value and push to array
-    searchInput = $("#searchInput").val();
-    console.log(searchInput)
-    SearchInputArr.push({
-        "Search Input": searchInput
-    });
-    localStorage.setItem("SearchInput", JSON.stringify(SearchInputArr));
-}
-
-$("button").on("click", function (event) {
-    storeSearchInput()
-});
-
 
 $("button").on("click", function (event) {
     event.preventDefault();
@@ -40,6 +29,13 @@ $("button").on("click", function (event) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+        //currentWeatherData = [{chicago: [API1 data]},{Seattle: [API1 data]} ]
+        currentWeatherData[searchInput] = response;
+        console.log(currentWeatherData[searchInput])
+
+        localStorage.setItem("API1", JSON.stringify(currentWeatherData));
+
+
         //get city value from API1
         $("#cityValue").text(response.name);
         //create a variable to get iconcode id from API1
@@ -200,10 +196,4 @@ $("button").on("click", function (event) {
 });
 
 
-//store a city input value in a key
-
-//pull the key value and run the click event
-
-//grab the api date and use moment js to convert
-
-//function
+})
